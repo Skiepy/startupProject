@@ -4,6 +4,8 @@ public class Name {
     private String firstname;
     private String middleName;
     private String lastName;
+    
+    private Name(){}
 
     // MUST BE PRIVATE
     private Name(Builder builder){
