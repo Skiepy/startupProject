@@ -62,7 +62,7 @@ public class RaceRepository implements  IRaceRepository {
     }
 
     @Override
-    public List<Race> getAll() { 
+    public List<Race> getAll() {
         return raceDB;
     }
 }
