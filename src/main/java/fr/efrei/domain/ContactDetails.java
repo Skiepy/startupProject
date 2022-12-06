@@ -39,16 +39,19 @@ public class ContactDetails {
         private String homeNumber;
         private String email;
 
-        public void setCellPhoneNumber(String cellPhoneNumber) {
+        public Builder setCellPhoneNumber(String cellPhoneNumber) {
             this.cellPhoneNumber = cellPhoneNumber;
+            return this;
         }
 
-        public void setHomeNumber(String homeNumber) {
+        public Builder setHomeNumber(String homeNumber) {
             this.homeNumber = homeNumber;
+            return this;
         }
 
-        public void setEmail(String email) {
+        public Builder setEmail(String email) {
             this.email = email;
+            return this;
         }
 
         public Builder copy(ContactDetails details){
