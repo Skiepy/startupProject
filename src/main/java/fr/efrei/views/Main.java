@@ -17,9 +17,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        RaceRepository repository = RaceRepository.getRepository();
-        loadObjects();
-        System.out.println(repository.getAll());
 
+
+        new Menu().loadMenu();
     }
 }
