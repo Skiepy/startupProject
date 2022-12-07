@@ -11,15 +11,15 @@ public class Menu {
         System.out.println("Welcome to Startup employees management system.");
         while (run) {
             System.out.println("┌────────────────────┐");
-            System.out.println(String.format("│%-20s│", "Options menu :"));
+            System.out.printf("│%-20s│%n", "Options menu :");
             System.out.println("└────────────────────┘");
             System.out.println("┌──────────────────────────────────┐");
-            System.out.println(String.format("│%-34s│", "(1) Add Employee"));
-            System.out.println(String.format("│%-34s│", "(2) Delete Employee"));
-            System.out.println(String.format("│%-34s│", "(3) Update Employee"));
-            System.out.println(String.format("│%-34s│", "(4) Search for an Employee by ID"));
-            System.out.println(String.format("│%-34s│", "(5) Display all Employees"));
-            System.out.println(String.format("│%-34s│", "(6) Exit the program"));
+            System.out.printf("│%-34s│%n", "(1) Add Employee");
+            System.out.printf("│%-34s│%n", "(2) Delete Employee");
+            System.out.printf("│%-34s│%n", "(3) Update Employee");
+            System.out.printf("│%-34s│%n", "(4) Search for an Employee by ID");
+            System.out.printf("│%-34s│%n", "(5) Display all Employees");
+            System.out.printf("│%-34s│%n", "(6) Exit the program");
             System.out.println("└──────────────────────────────────┘");
             System.out.print("Your choice : ");
 
@@ -30,27 +30,27 @@ public class Menu {
             }
 
             switch (answer) {
-                case 1:
+                case 1: // Add Employee
                     System.out.println("Not available for the moment");
                     run = false;
                     break;
-                case 2:
+                case 2: // Delete Employee
                     System.out.println("Not available for the moment");
                     run = false;
                     break;
-                case 3:
+                case 3: // Update Employee
                     System.out.println("Not available for the moment");
                     run = false;
                     break;
-                case 4:
+                case 4: // Search Employee by ID
                     System.out.println("Not available for the moment");
                     run = false;
                     break;
-                case 5:
+                case 5: // Display all employee
                     System.out.println("Not available for the moment");
                     run = false;
                     break;
-                case 6:
+                case 6: // Exit
                     System.out.println("Thank you for using our program.");
                     run = false;
                     break;
