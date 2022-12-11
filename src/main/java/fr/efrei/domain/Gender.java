@@ -21,10 +21,7 @@ public class Gender {
 
     @Override
     public String toString() {
-        return "Gender{" +
-                "id='" + id + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+        return "Gender : " + description + "\n";
     }
 
     public static class Builder{

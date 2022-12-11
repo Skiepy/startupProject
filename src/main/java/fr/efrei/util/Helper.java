@@ -1,6 +1,7 @@
 package fr.efrei.util;
 
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Helper {
     public static boolean isNullOrEmpty(String s) {
@@ -12,10 +13,6 @@ public class Helper {
     }
 
     public static int generateEmployeeID() {
-        String str = generateID();
-        int uid=str.hashCode();
-        String filterStr=""+uid;
-        str=filterStr.replaceAll("-", "");
-        return Integer.parseInt(str);
+        return ThreadLocalRandom.current().nextInt(202300000, 202399999);
     }
 }

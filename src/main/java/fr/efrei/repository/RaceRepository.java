@@ -24,8 +24,8 @@ public class RaceRepository implements  IRaceRepository {
 
     @Override
     public Race create(Race race) {
-        boolean sucess = raceDB.add(race);
-        if (sucess) {
+        boolean success = raceDB.add(race);
+        if (success) {
             return race;
         }
         return null;

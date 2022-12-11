@@ -27,11 +27,9 @@ public class ContactDetails {
 
     @Override
     public String toString() {
-        return "ContactDetails{" +
-                "cellPhoneNumber='" + cellPhoneNumber + '\'' +
-                ", homeNumber='" + homeNumber + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "Cellphone number : " + cellPhoneNumber + "\n"
+                + "Home phone number : " + homeNumber + "\n"
+                + "Email : " + email + "\n";
     }
 
     public static class Builder{

@@ -28,11 +28,9 @@ public class Name {
 
     @Override
     public String toString() {
-        return "Name{" +
-                "firstname='" + firstname + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+        return "Firstname : " + firstname + "\n"
+                + "Middlename : " + middleName + "\n"
+                + "Lastname : " + lastName + "\n";
     }
 
     public static class Builder {
@@ -56,6 +54,12 @@ public class Name {
         }
 
         // copy
+        public Builder copy(Name name){
+            this.firstname = name.firstname;
+            this.middleName = name.middleName;
+            this.lastName = name.lastName;
+            return this;
+        }
 
         // build
         public Name build(){

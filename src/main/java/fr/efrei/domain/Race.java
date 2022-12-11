@@ -21,10 +21,7 @@ public class Race {
 
     @Override
     public String toString() {
-        return "Race{" +
-                "id='" + id + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+        return "Race : " + description + "\n";
     }
 
     public static class Builder {

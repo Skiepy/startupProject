@@ -21,10 +21,8 @@ public class AddressDetails {
 
     @Override
     public String toString() {
-        return "AddressDetails{" +
-                "streetAddress='" + streetAddress + '\'' +
-                ", postalAddress='" + postalAddress + '\'' +
-                '}';
+        return "Street address : " + streetAddress + "\n"
+                + "Postal address : " + postalAddress + "\n";
     }
 
     public static class Builder{

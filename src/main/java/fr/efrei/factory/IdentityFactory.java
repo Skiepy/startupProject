@@ -5,6 +5,7 @@ import fr.efrei.util.Helper;
 
 public class IdentityFactory {
     public static Identity createIdentity(String identityType, String indentityValue){
+
         if (Helper.isNullOrEmpty(identityType) || Helper.isNullOrEmpty(indentityValue))
             return null;
 

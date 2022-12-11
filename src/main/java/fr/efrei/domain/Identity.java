@@ -21,10 +21,8 @@ public class Identity {
 
     @Override
     public String toString() {
-        return "Identity{" +
-                "identityType='" + identityType + '\'' +
-                ", identityValue='" + identityValue + '\'' +
-                '}';
+        return identityType + "'s number : "
+                + identityValue + "\n";
     }
 
     public static class Builder{
