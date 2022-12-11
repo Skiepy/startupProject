@@ -51,15 +51,13 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "employeeNumber=" + employeeNumber +
-                ", name=" + name +
-                ", gender=" + gender +
-                ", race=" + race +
-                ", contactDetails=" + contactDetails +
-                ", addressDetails=" + addressDetails +
-                ", identity=" + identity +
-                '}';
+        return "Employee N°" + employeeNumber + " :\n"
+                + name.toString()
+                + gender.toString()
+                + race.toString()
+                + contactDetails.toString()
+                + addressDetails.toString()
+                + identity.toString();
     }
 
     public static class Builder{
